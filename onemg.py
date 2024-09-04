@@ -129,7 +129,6 @@ def scrape_data(url):
         df['salts'] = medicineSaltsList
         df['prodUrl'] = medicineDetailUrlList
 
-
     except:
         print("Exception Occureed");
 
@@ -138,8 +137,6 @@ def scrape_data(url):
         driver.quit()
 
     return df
-
-
 
 
 if __name__ == '__main__':
@@ -169,7 +166,7 @@ if __name__ == '__main__':
 
     # We then fetch 26 last page numbers for those links
     lastPageNumbers = [
-        1072,
+    1072,
     309,
     1007,
     589,
@@ -267,8 +264,4 @@ if __name__ == '__main__':
                                     urls=[]
                                     sleep(randint(2, 10))
 
-
-
-
     # df.to_csv(f'${alphabets[index]}.csv', index=True, encoding='utf-8')
-
